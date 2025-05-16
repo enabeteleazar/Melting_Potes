@@ -1,0 +1,187 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fdf6ee;
+    color: #333;
+}
+
+.hero {
+    color: #4f7942;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    padding: 40px 20px;
+}
+
+.hero .btn {
+    background-color: #6b8e23; /* vert naturel */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #4f7942;
+}
+
+section {
+    background-color: #fffaf0;
+    border-top: 4px solid #5c4033;
+    border-bottom: 4px solid #5c4033;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.menu-section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5rem;
+}
+
+.menu-category {
+  margin-bottom: 2rem;
+}
+
+.menu-category h3 {
+  color: #4B5320; /* vert végétal */
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-category li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-category li span {
+  font-weight: bold;
+  color: #8B4513; /* brun bois */
+}
+
+.menu-category li small {
+  display: block;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.horaires {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.horaires h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #4B3621; /* couleur bois */
+  text-align: center;
+}
+
+.horaire-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.ligne {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: #333;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.ligne span:first-child {
+  font-weight: 600;
+}
+
+/* Responsive pour petits écrans */
+@media screen and (max-width: 480px) {
+  .ligne {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 8px;
+  }
+
+  .ligne span {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-block {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.horaire-table .ligne {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-block {
+    width: 100%;
+  }
+}
+
+.map-link {
+  all: unset;
+  background: none;
+  border: none;
+  color: #3366cc;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
