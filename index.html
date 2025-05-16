@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta name="description" content="Melting-Potes77, un cadreagréable">
+    <meta name="keywords" content="café, restaurant, Nangis">
+    <meta name="author" content="Nabet Eleazar Dan">
+    <meta name="version" content="1.0.0">
     
+    <title>Melting Pote77</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="café, restaurant, Nangis">
+    <meta property="og:description" content="Découvrez notre carte dans un cadre végétal et chaleureux">
+    <meta property="og:image" content="img/image_thumbnail.jpg">
+    <meta property="og:url" content="https://melting-potes77.vercel.app">
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Melting Potes77</h1>
+            <p>Café, détente et délices maison</p>
+            <br>
+            <a href="#menu" class="btn">Voir le menu</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>À propos</h2>
+            <p>Un lieu chaleureux pour vos pauses café, déjeuners gourmands ou douceurs sucrées.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+  <div class="container menu-section">
+    <h2>Menu</h2>
+
+  <div class="menu-category">
+    <h3>Planches</h3>
+    <ul>
+      <li>Planche charcuterie – <span>6€</span></li>
+      <li>Planche fromage – <span>6€</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-category">
+    <h3>Entrées / Snacks</h3>
+    <ul>
+      <li>Samoussa x4 – <span>4€</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-category">
+    <h3>Plats</h3>
+    <ul>
+      <li>
+        Croque Monsieur + salade – <span>6€</span><br>
+        <small>Choix : porc ou poulet</small>
+      </li>
+      <li>
+        Gaufre salée + salade – <span>6€</span><br>
+        <small>Choix : chorizo ou fromage de chèvre</small>
+      </li>
+    </ul>
+  </div>
+
+  <div class="menu-category">
+    <h3>Desserts</h3>
+    <ul>
+      <li>Floup (exotique, vanille) – <span>2,50€</span></li>
+      <li>
+        Gaufre – <span>4€</span><br>
+        <small>Accompagnements : Nutella, sucre glace, miel, chantilly</small>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        </div>
+    </section>
+
+
+ <footer>
+  <div class="footer-container">
+    <!-- Bloc Horaires -->
+    <div class="footer-block">
+      <h3>Horaires</h3>
+      <div class="horaire-table">
+        <div class="ligne"><span>Lundi</span><span>Fermé</span></div>
+        <div class="ligne"><span>Mardi</span><span>17h - 22h</span></div>
+        <div class="ligne"><span>Mercredi</span><span>10h - 22h</span></div>
+        <div class="ligne"><span>Jeudi</span><span>10h - 14h & 16h - 22h</span></div>
+        <div class="ligne"><span>Vendredi</span><span>10h - 14h & 16h - 23h</span></div>
+        <div class="ligne"><span>Samedi</span><span>10h - 23h</span></div>
+        <div class="ligne"><span>Dimanche</span><span>11h - 22h</span></div>
+      </div>
+    </div>
+
+    <!-- Bloc Contact -->
+    <div class="footer-block">
+      <h3>Contact</h3>
+      <p>77 rue du Général de Gaulle<br>77370 Nangis</p>
+      <p>Tél : <a href="tel:0123456789">01 23 45 67 89</a></p>
+      <p><button class="map-link" onclick="openMap()">Voir sur la carte</button></p>
+    </div>
+
+    <!-- Bloc À propos -->
+    <div class="footer-block">
+      <h3>À propos</h3>
+      <p>Melting Potes77 est un café-bar convivial à l’ambiance chaleureuse, mêlant bois et végétation. Venez déguster nos spécialités maison dans une ambiance détendue.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Melting Potes77 — Tous droits réservés</p>
+  </div>
+</footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
