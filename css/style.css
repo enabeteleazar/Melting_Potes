@@ -24,6 +24,35 @@ body {
     background-color: #4f7942;
 }
 
+.custom-nav-link {
+  position: relative;
+  padding-bottom: 4px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.custom-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+  color: #000;
+}
+
+.custom-nav-link:hover::after,
+.custom-nav-link:focus::after {
+  width: 100%;
+}
+
 section {
     background-color: #fffaf0;
     border-top: 4px solid #5c4033;
