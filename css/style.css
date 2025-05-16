@@ -81,6 +81,10 @@ section {
   margin-top: 0.2rem;
 }
 
+.option { 
+    font-size: 0.9em; color: #555; 
+}
+
 .horaires {
   padding: 20px;
   font-family: 'Arial', sans-serif;
