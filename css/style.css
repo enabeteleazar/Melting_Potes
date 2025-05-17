@@ -7,7 +7,7 @@ body {
 .hero {
     color: #4f7942;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-    padding: 0px 20px 80px;
+    padding: 0px 20px 120px;
 }
 
 .custom-nav-link { 
@@ -41,13 +41,13 @@ body {
 
 section {
     background-color: #fffaf0;
-    border-top: 4px solid #5c4033;
-    border-bottom: 4px solid #5c4033;
+    border-top: 4px thick double #5c4033;
+    border-bottom: 4px thick double #5c4033;
     padding: 60px 20px;
     text-align: center;
 }
 
-.menu-section {
+.menu-section { 
   padding: 2rem;
   max-width: 800px;
   margin: auto;
@@ -55,6 +55,8 @@ section {
 }
 
 .menu-section h2 {
+  color: #4f7942;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   text-align: center;
   font-size: 2em;
   margin-bottom: 1.5rem;
@@ -66,6 +68,7 @@ section {
 
 .menu-category h3 {
   color: #4B5320; /* vert végétal */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
@@ -77,23 +80,22 @@ section {
 }
 
 .menu-category li {
-  margin-bottom: 0.8rem;
-  font-size: 1.1em;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 .menu-category li span {
+  align-self: flex-end;
   font-weight: bold;
-  color: #8B4513; /* brun bois */
+  color: #8B4513;
 }
 
 .menu-category li small {
-  display: block;
-  font-size: 0.9em;
+  margin-top: 0; /* Supprime l’espace au-dessus */
+  line-height: 1; /* Réduit encore l'espacement vertical */
   color: #555;
-  margin-top: 0.2rem;
 }
 
 .horaires {
