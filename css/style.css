@@ -12,9 +12,21 @@ body {
 .hero {
     color: #4f7942;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-    padding: 0px 20px 120px;
+    padding: 10px 20px ;
+
 }
 
+.accueil {
+    color: whitesmoke;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    background-image: url("https://cdn.vox-cdn.com/thumbor/teAmN_9ENCEO1RdjiLNwZ6tf4VQ=/0x0:1650x1100/1200x0/filters:focal(0x0:1650x1100):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/23968986/Alimento_x_PREEN_0084_7x11_150.jpg");
+    background-size: cover;       /* Remplit toute la zone sans déformation */
+    background-position: center;  /* Centre l’image */
+    background-repeat: no-repeat; /* Évite la répétition de l’image */
+
+}
+
+/* NavBar */
 .custom-nav-link { 
   position: relative;
   padding-bottom: 4px;
@@ -47,11 +59,29 @@ body {
 /* Sections */
 section {
     background-color: #fffaf0;
-    border-top: 4px thick double #5c4033;
-    border-bottom: 4px thick double #5c4033;
     padding: 60px 20px;
     text-align: center;
+    min-height: 100vh;
+
 }
+
+section h2 {
+    color: #4f7942;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+section h6 {
+    color: ##4B5320;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.section-fullscreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 .menu-section {
   padding: 2rem;
@@ -61,6 +91,7 @@ section {
 }
 
 .menu-section h2 {
+
   text-align: center;
   font-size: 2em;
   margin-bottom: 1.5rem;

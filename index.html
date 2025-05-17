@@ -8,7 +8,6 @@
   <meta name="author" content="Nabet Eleazar Dan" />
   <!-- Version 0.2.0-a -->
 
-
   <title>Melting Potes 77</title>
 
   <!-- Bootstrap CSS -->
@@ -26,138 +25,101 @@
 </head>
 
 <body>
-
-<header class="py-3 border-bottom">
-  <div class="hero container d-flex flex-wrap align-items-center justify-content-between">
-    
-    <!-- Titre / slogan -->
-    <div class="d-flex flex-column">
-      <h1 class="h4 mb-0 fw-bold">Melting Potes 77</h1>
-    </div>
-
-    <!-- Navbar Bootstrap responsive -->
-    <nav class="navbar navbar-expand-md p-0">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto gap-3">
-          <li class="nav-item">
-            <a href="#menu" class="nav-link custom-nav-link">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a href="#carte" class="nav-link custom-nav-link">La carte</a>
-          </li>
-          <li class="nav-item">
-            <a href="#biere" class="nav-link custom-nav-link">Carte des bières</a>
-          </li>
-          <li class="nav-item">
-            <a href="#evenements" class="nav-link custom-nav-link">Événements</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contacts" class="nav-link custom-nav-link">Contacts</a>
-          </li>
-        </ul>
+  <!-- HEADER -->
+  <header class="py-3 border-bottom">
+    <div class="hero container d-flex flex-wrap align-items-center justify-content-between">
+      <div class="d-flex flex-column">
+        <h1 class="h5 mb-0 fw-bold">Melting Potes 77</h1>
+        <small class="text-muted fst-italic">Café, détente et délices maison</small>
       </div>
-    </nav>
-
-  </div>
-</header>
-    
-    <main>
-    <section id="about">
-        <div class="container">
-            <h2>À propos</h2>
-            <p>Un lieu chaleureux pour vos pauses café, déjeuners gourmands ou douceurs sucrées.</p>
+      <nav class="navbar navbar-expand-md p-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item"><a href="#menu" class="nav-link custom-nav-link">Menu</a></li>
+            <li class="nav-item"><a href="#carte" class="nav-link custom-nav-link">La carte</a></li>
+            <li class="nav-item"><a href="#biere" class="nav-link custom-nav-link">Carte des bières</a></li>
+            <li class="nav-item"><a href="#evenements" class="nav-link custom-nav-link">Événements</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link custom-nav-link">Contacts</a></li>
+          </ul>
         </div>
-    </section>
+      </nav>
+    </div>
+  
+  <!-- HERO -->
+  <section class="hero accueil section-fullscreen d-flex align-items-center justify-content-center" id="accueil">
+    <div>
+      <h1>Bienvenue chez Melting Potes 77</h1>
+      <p class="lead">Un lieu convivial pour partager des moments gourmands</p>
+    </div>
+  </section>
+</header>
 
-    <section id="menu">
-  <div class="container menu-section">
-    <h2>Menu</h2>
+  <!-- MENU -->
+  <section id="menu">
+    <div class="container text-center">
+      <h2>Notre Menu</h2>
+      <h6>Des plats faits maison préparés avec amour.</h6>
+    </div>
+  </section>
 
-  <div class="menu-category">
-    <h3>Planches</h3>
-    <ul>
-      <li>Planche charcuterie – <span>6€</span></li>
-      <li>Planche fromage – <span>6€</span></li>
-    </ul>
-  </div>
+  <!-- CARTE -->
+  <section id="carte">
+    <div class="container text-center">
+      <h2>La Carte</h2>
+      <h6>Explorez nos spécialités culinaires du moment.</h6>
+    </div>
+  </section>
 
-  <div class="menu-category">
-    <h3>Entrées / Snacks</h3>
-    <ul>
-      <li>Samoussa x4 – <span>4€</span></li>
-    </ul>
-  </div>
+  <!-- BIERE -->
+  <section id="biere">
+    <div class="container text-center">
+      <h2>Carte des Bières</h2>
+      <h6>Une sélection locale et artisanale pour les amateurs.</h6>
+    </div>
+  </section>
 
-  <div class="menu-category">
-    <h3>Plats</h3>
-    <ul>
-      <li>
-        <strong>Croque Monsieur + salade</strong> – <span>6€</span><br>
-        <span class="option">Choix : porc ou poulet</span>
-</li>
-      <li>
-        Gaufre salée + salade – <span>6€</span><br>
-        <span class="option">Choix : chorizo ou fromage de chèvre</span>
-      </li>
-    </ul>
-  </div>
+  <!-- EVENEMENTS -->
+  <section id="evenements">
+    <div class="container text-center">
+      <h2>Événements</h2>
+      <h6>Ne manquez pas nos soirées et activités thématiques.</h6>
+    </div>
+  </section>
 
-  <div class="menu-category">
-    <h3>Desserts</h3>
-    <ul>
-      <li>Floup (exotique, vanille) – <span>2,50€</span></li>
-      <li>
-        Gaufre – <span>4€</span><br>
-        <small>Accompagnements : Nutella, sucre glace, miel, chantilly</small>
-      </li>
-    </ul>
-  </div>
-</div>
-</section>
-</main>
+  <!-- CONTACTS -->
+  <section id="contacts">
+    <div class="container text-center">
+      <h2>Contactez-nous</h2>
+      <p>Adresse, téléphone, réseaux sociaux et formulaire de contact.</p>
+    </div>
+  </section>
 
-
- <footer>
-  <div class="footer-container">
-    <!-- Bloc Horaires -->
-    <div class="footer-block">
-      <h3>Horaires</h3>
-      <div class="horaire-table">
-        <div class="ligne"><span>Lundi</span><span>Fermé</span></div>
-        <div class="ligne"><span>Mardi</span><span>17h - 22h</span></div>
-        <div class="ligne"><span>Mercredi</span><span>10h - 22h</span></div>
-        <div class="ligne"><span>Jeudi</span><span>10h - 14h & 16h - 22h</span></div>
-        <div class="ligne"><span>Vendredi</span><span>10h - 14h & 16h - 23h</span></div>
-        <div class="ligne"><span>Samedi</span><span>10h - 23h</span></div>
-        <div class="ligne"><span>Dimanche</span><span>11h - 22h</span></div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <h5>Melting Potes 77</h5>
+          <p class="text-muted">Café, détente et délices maison</p>
+        </div>
+        <div class="col-md">
+          <h5>Adresse</h5>
+          <p class="text-muted">123 Rue de la Joie, 75000 Paris</p>
+        </div>
+        <div class="col-md">
+          <h5>Horaires</h5>
+          <p class="text-muted">Lun - Dim : 10h - 22h</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Melting Potes 77. Tous droits réservés.
       </div>
     </div>
+  </footer>
 
-    <!-- Bloc Contact -->
-    <div class="footer-block">
-      <h3>Contact</h3>
-      <p>77 rue du Général de Gaulle<br>77370 Nangis</p>
-      <p>Tél : <a href="tel:0123456789">01 23 45 67 89</a></p>
-      <p><button class="map-link" onclick="openMap()">Voir sur la carte</button></p>
-    </div>
-
-    <!-- Bloc À propos -->
-    <div class="footer-block">
-      <h3>À propos</h3>
-      <p>Melting Potes77 est un café-bar convivial à l’ambiance chaleureuse, mêlant bois et végétation. Venez déguster nos spécialités maison dans une ambiance détendue.</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 Melting Potes77 — Tous droits réservés</p>
-  </div>
-</footer>
-
-    <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
