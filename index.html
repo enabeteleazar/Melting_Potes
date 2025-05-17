@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Melting-Potes77, un cadre agréable" />
-  <meta name="keywords" content="café, restaurant, Nangis" />
+  <meta name="keywords" content="Melting-Potes77,café,agréable, restaurant, Nangis" />
   <meta name="author" content="Nabet Eleazar Dan" />
   <!-- Version 0.2.0-a -->
 
@@ -22,87 +22,16 @@
   <meta property="og:url" content="https://melting-potes77.vercel.app" />
 
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <script src="assets/js/include.js" defer></script>
 </head>
 
 <body>
   <!-- HEADER -->
-  <header class="py-3 border-bottom">
-    <div class="hero container d-flex flex-wrap align-items-center justify-content-between">
-      <div class="d-flex flex-column">
-        <h1 class="h5 mb-0 fw-bold">Melting Potes 77</h1>
-        <small class="text-muted fst-italic">Café, détente et délices maison</small>
-      </div>
-      <nav class="navbar navbar-expand-md p-0">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ms-auto gap-3">
-            <li class="nav-item"><a href="#menu" class="nav-link custom-nav-link">Menu</a></li>
-            <li class="nav-item"><a href="#carte" class="nav-link custom-nav-link">La carte</a></li>
-            <li class="nav-item"><a href="#biere" class="nav-link custom-nav-link">Carte des bières</a></li>
-            <li class="nav-item"><a href="#evenements" class="nav-link custom-nav-link">Événements</a></li>
-            <li class="nav-item"><a href="#contacts" class="nav-link custom-nav-link">Contacts</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  
-  <!-- HERO -->
-  <section class="hero accueil section-fullscreen d-flex align-items-center justify-content-center" id="accueil">
-    <div>
-      <h1>Bienvenue chez Melting Potes 77</h1>
-      <p class="lead">Un lieu convivial pour partager des moments gourmands</p>
-    </div>
-  </section>
-</header>
+  <div data-include="components/header.html"></div>
 
   <!--  MENU  -->
-    <section id="menu">
-        <div class="container menu-section">
-            <h2>Menu</h2>
-
-            <div class="menu-category">
-                <h5>Planches</h5>
-                <ul>
-                    <li>Planche charcuterie<span>6€</span></li>
-                    <li>Planche fromage<span>6€</span></li>
-                </ul>
-            </div>
-
-            <div class="menu-category">
-              <h5>Entrées / Snacks</h5>
-              <ul>
-                <li>Samoussa x4<span>4€</span></li>
-              </ul>
-            </div>
-
-  <div class="menu-category">
-    <h5>Plats</h5>
-    <ul>
-      <li>
-      Croque Monsieur + salade <span>6€</span>
-      <small>Choix : porc ou poulet</small>
-</li>
-      <li>
-        Gaufre salée + salade<span>6€</span>
-        <small>Choix : chorizo ou fromage de chèvre</small>
-      </li>
-    </ul>
-  </div>
-
-  <div class="menu-category">
-    <h3>Desserts</h3>
-    <ul>
-      <li>Floup (exotique, vanille)<span>2,50€</span></li>
-      <li>
-        Gaufre <span>4€</span>
-        <small>Accompagnements : Nutella, sucre glace, miel, chantilly</small>
-      </li>
-    </ul>
-  </div>
-</div>
-    </section>
+  <div data-include="components/menu.html"></div>
 
   <!-- CARTE -->
   <section id="carte">
@@ -137,27 +66,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
-          <h5>Melting Potes 77</h5>
-          <p class="text-muted">Café, détente et délices maison</p>
-        </div>
-        <div class="col-md">
-          <h5>Adresse</h5>
-          <p class="text-muted">123 Rue de la Joie, 75000 Paris</p>
-        </div>
-        <div class="col-md">
-          <h5>Horaires</h5>
-          <p class="text-muted">Lun - Dim : 10h - 22h</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2025 Melting Potes 77. Tous droits réservés.
-      </div>
-    </div>
-  </footer>
+   <div data-include="components/footer.html"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
