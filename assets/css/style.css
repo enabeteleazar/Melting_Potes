@@ -84,7 +84,7 @@ body {
 section {
   padding: 60px 20px;
   text-align: center;
-  min-height: 60vh;
+  min-height: 0vh;
 }
 
 section h2 {

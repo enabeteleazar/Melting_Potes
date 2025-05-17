@@ -5,6 +5,12 @@
 - [x] Créer `components/navbar.html`
 - [x] Créer `components/footer.html`
 - [x] Ajouter `include.js` pour l'injection HTML
+- [x] Vérifier le fonctionnement avec un serveur local
+
+## 🔧 Découpage du CSS en composants
+- [ ] Créer `components/header.css`
+- [ ] Créer `components/navbar.css`
+- [ ] Créer `components/footer.css`
 - [ ] Vérifier le fonctionnement avec un serveur local
 
 ## 🧑‍🎨 Design & CSS Responsive
@@ -26,7 +32,7 @@
 
 ## 🚀 Déploiement
 - [ ] Tester en local via `serve` ou `python3 -m http.server`
-- [ ] Déployer sur GitHub Pages / Netlify
+- [ ] Déployer sur GitHub Pages / Vercel
 - [ ] Vérifier le SEO de base (balises title/meta)
 
 ---
