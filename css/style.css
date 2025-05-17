@@ -7,24 +7,10 @@ body {
 .hero {
     color: #4f7942;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-    padding: 40px 20px;
+    padding: 0px 20px 80px;
 }
 
-.hero .btn {
-    background-color: #6b8e23; /* vert naturel */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.hero .btn:hover {
-    background-color: #4f7942;
-}
-
-.custom-nav-link {
+.custom-nav-link { 
   position: relative;
   padding-bottom: 4px;
   font-weight: 500;
