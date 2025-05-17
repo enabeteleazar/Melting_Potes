@@ -1,3 +1,4 @@
+/* Fichier principal qui importe les autres */
 @import url('./base.css');
 @import url('./layout.css');
 @import url('./navbar.css');
