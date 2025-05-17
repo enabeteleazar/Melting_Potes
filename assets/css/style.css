@@ -1,9 +1,0 @@
-/* Fichier principal qui importe les autres */
-@import url('./base.css');
-@import url('./layout.css');
-@import url('./navbar.css');
-@import url('./hero.css');
-@import url('./accueil.css');
-@import url('./menu.css');
-@import url('./footer.css');
-@import url('./responsive.css');
