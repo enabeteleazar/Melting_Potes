@@ -71,7 +71,7 @@ section h2 {
 }
 
 section h6 {
-    color: ##4B5320;
+    color: #4B5320;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
@@ -101,7 +101,7 @@ section h6 {
     margin-bottom: 2rem;
 }
 
-.menu-category h3 {
+.menu-category h5 {
   color: #4B5320; /* vert végétal */
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.5rem;
@@ -114,23 +114,22 @@ section h6 {
 }
 
 .menu-category li {
-  margin-bottom: 0.8rem;
-  font-size: 1.1em;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 .menu-category li span {
+  align-self: flex-end;
   font-weight: bold;
-  color: #8B4513; /* brun bois */
+  color: #8B4513;
 }
 
 .menu-category li small {
-  display: block;
-  font-size: 0.9em;
+  margin-top: -30px;
+  font-style: italic;
   color: #555;
-  margin-top: 0.2rem;
 }
 
 .option {
