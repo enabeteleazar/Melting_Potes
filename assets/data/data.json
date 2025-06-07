@@ -1,0 +1,133 @@
+{
+  "menus": [
+    {
+      "id": "menu1",
+      "titre": "Plats",
+      "categories": [
+        {
+          "nom": "Planches",
+          "items": [
+            { "nom": "Planche charcuterie", "prix": 6.0 },
+            { "nom": "Planche fromage", "prix": 6.0 }
+          ]
+        },
+        {
+          "nom": "Entrées / Snacks",
+          "items": [
+            { "nom": "Samoussa x4", "prix": 4.0 }
+          ]
+        },
+        {
+          "nom": "Plats",
+          "items": [
+            {
+              "nom": "Croque Monsieur + salade",
+              "prix": 6.0,
+              "options": "Choix : porc ou poulet"
+            },
+            {
+              "nom": "Gaufre salée + salade",
+              "prix": 6.0,
+              "options": "Choix : chorizo ou fromage de chèvre"
+            }
+          ]
+        },
+        {
+          "nom": "Desserts",
+          "items": [
+            {
+              "nom": "Floup (exotique, vanille)",
+              "prix": 2.5
+            },
+            {
+              "nom": "Gaufre",
+              "prix": 4.0,
+              "options": "Accompagnements : Nutella, sucre glace, miel, chantilly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu2",
+      "titre": "Bières",
+      "categories": [
+        {
+          "nom": "Felsgod",
+          "items": [
+            { "nom": "25 cl", "prix": 2.4 },
+            { "nom": "50 cl", "prix": 4.8 }
+          ]
+        },
+        {
+          "nom": "Felsgod Abbaye",
+          "items": [
+            { "nom": "25 cl", "prix": 2.6 },
+            { "nom": "50 cl", "prix": 5.2 }
+          ]
+        },
+        {
+          "nom": "Goudale",
+          "items": [
+            { "nom": "25 cl", "prix": 3.0 },
+            { "nom": "50 cl", "prix": 6.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu3",
+      "titre": "Soft",
+      "categories": [
+        {
+          "nom": "Sodas",
+          "items": [
+            { "nom": "Coca", "prix": 2.5 },
+            { "nom": "Oasis", "prix": 2.5 },
+            { "nom": "Ice T", "prix": 2.5 },
+            { "nom": "Orangina", "prix": 2.5 },
+            { "nom": "Jus de Fruits", "prix": 2.8 },
+            { "nom": "Jus d'Orange", "prix": 2.9 },
+            { "nom": "Diabolo", "prix": 2.3 },
+            { "nom": "Limonade", "prix": 2.1 }
+          ]
+        },
+        {
+          "nom": "Eaux",
+          "items": [
+            { "nom": "Vittel", "prix": 2.1 },
+            { "nom": "Vittel Sirop", "prix": 2.3 },
+            { "nom": "Perriers", "prix": 2.5 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu4",
+      "titre": "Cocktails & Alcools Forts",
+      "categories": [
+        {
+          "nom": "Cocktails",
+          "items": [
+            { "nom": "Mojito", "prix": 7.0 },
+            { "nom": "Capirinna", "prix": 7.0 },
+            { "nom": "Blue Lagon", "prix": 7.0 }
+          ]
+        },
+        {
+          "nom": "Alcool Fort",
+          "items": [
+            { "nom": "Rhum Blanc", "prix": 5.0 },
+            { "nom": "Rhum Vieux", "prix": 5.0 },
+            { "nom": "Vodka", "prix": 5.0 },
+            { "nom": "Gin", "prix": 5.0 },
+            { "nom": "Baby", "prix": 2.5 },
+            { "nom": "Whisky", "prix": 5.0 },
+            { "nom": "Whisky Coca", "prix": 5.5 },
+            { "nom": "Jack Daniel", "prix": 6.0 }
+          ]
+        }
+      ]
+    }
+  ]
+}
