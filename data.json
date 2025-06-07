@@ -1,0 +1,21 @@
+{
+    "plats": [
+        {
+            "nom": "...",
+            "prix": 14.50,
+            "categorie": "menu",
+            "image": "img/img.jpg"
+        },
+        {
+            "nom": "...",
+            "prix": 14.50,
+            "categorie": "menu",
+            "image": "img/img.jpg"
+        },{
+            "nom": "...",
+            "prix": 14.50,
+            "categorie": "menu",
+            "image": "img/img.jpg"
+        }
+    ]
+}
