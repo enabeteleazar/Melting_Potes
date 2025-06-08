@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Créer un bouton pour chaque menu
       data.menus.forEach(menu => {
         const btn = document.createElement('button');
+        btn.className = 'btn btn-primary';
         btn.textContent = menu.titre;
         btn.style.marginRight = '10px';
+        btn.style.borderRadius = '25px';
         btn.onclick = () => afficherMenu(menu, container);
         boutonZone.appendChild(btn);
       });
