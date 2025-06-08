@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('/assets/data/data.json') // ← CORRECT avec ton arborescence
+  fetch('/assets/data/data.json')
     .then(response => {
       if (!response.ok) {
         throw new Error("Erreur HTTP " + response.status);
@@ -7,38 +7,49 @@ document.addEventListener('DOMContentLoaded', () => {
       return response.json();
     })
     .then(data => {
-      const container = document.getElementById('plats');
-      if (!container) {
-        console.error("⚠️ Élément #plats introuvable");
+      const boutonZone = document.getElementById('boutons-menus');
+      const container = document.getElementById('contenu-menu');
+
+      if (!boutonZone || !container) {
+        console.error("⚠️ Conteneurs #boutons-menus ou #contenu-menu introuvables");
         return;
       }
 
-      const menuPlats = data.menus.find(menu => menu.id === 'menu1');
-      if (!menuPlats) {
-        container.innerHTML = '<p>Menu "Plats" non trouvé.</p>';
-        return;
-      }
-
-      container.innerHTML = ''; // Vide le conteneur
-
-      menuPlats.categories.forEach(categorie => {
-        const catTitle = document.createElement('h4');
-        catTitle.textContent = categorie.nom;
-        container.appendChild(catTitle);
-
-        categorie.items.forEach(item => {
-          const div = document.createElement('div');
-          div.classList.add('plats');
-          div.innerHTML = `
-            <h5>${item.nom}</h5>
-            <p>${item.prix.toFixed(2)} €</p>
-            ${item.options ? `<small>${item.options}</small>` : ''}
-          `;
-          container.appendChild(div);
-        });
+      // Créer un bouton pour chaque menu
+      data.menus.forEach(menu => {
+        const btn = document.createElement('button');
+        btn.textContent = menu.titre;
+        btn.style.marginRight = '10px';
+        btn.onclick = () => afficherMenu(menu, container);
+        boutonZone.appendChild(btn);
       });
+
+      // Afficher le premier menu par défaut
+      afficherMenu(data.menus[0], container);
     })
     .catch(err => {
       console.error('❌ Erreur de chargement JSON :', err);
     });
 });
+
+// Fonction d'affichage d’un menu
+function afficherMenu(menu, container) {
+  container.innerHTML = ''; // Vide le conteneur
+
+  menu.categories.forEach(categorie => {
+    const catTitle = document.createElement('h4');
+    catTitle.textContent = categorie.nom;
+    container.appendChild(catTitle);
+
+    categorie.items.forEach(item => {
+      const div = document.createElement('div');
+      div.classList.add('plats');
+      div.innerHTML = `
+        <h5>${item.nom}</h5>
+        <p>${item.prix.toFixed(2)} €</p>
+        ${item.options ? `<small>${item.options}</small>` : ''}
+      `;
+      container.appendChild(div);
+    });
+  });
+}

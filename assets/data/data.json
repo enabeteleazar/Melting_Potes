@@ -2,7 +2,7 @@
   "menus": [
     {
       "id": "menu1",
-      "titre": "Plats",
+      "titre": "Carte",
       "categories": [
         {
           "nom": "Planches",
