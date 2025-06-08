@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Créer un bouton pour chaque menu
       data.menus.forEach(menu => {
         const btn = document.createElement('button');
-        btn.className = 'btn btn-primary';
+        btn.className = 'menu-bouttons label';
         btn.textContent = menu.titre;
         btn.style.marginRight = '10px';
         btn.style.borderRadius = '25px';
@@ -40,6 +40,7 @@ function afficherMenu(menu, container) {
 
   menu.categories.forEach(categorie => {
     const catTitle = document.createElement('h4');
+    catTitle.className= 'h4';
     catTitle.textContent = categorie.nom;
     container.appendChild(catTitle);
 
