@@ -1,0 +1,23 @@
+/* ---------------- Sections ---------------- */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 0vh;
+}
+
+section h2 {
+  color: #4f7942;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+section h6 {
+  color: #4B5320;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-fullscreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
