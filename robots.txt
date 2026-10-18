@@ -1,0 +1,11 @@
+# robots.txt for Melting-potes77
+
+User-agent: *
+Allow: /
+
+# Bloque l'accès aux dossiers internes si présents
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap (à créer si besoin)
+Sitemap: https://melting-potes77.vercel.app/sitemap.xml
