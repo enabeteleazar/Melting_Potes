@@ -32,4 +32,12 @@ function copyStaticFiles() {
 
 export default {
   plugins: [copyStaticFiles()],
+  server: {
+    // Ancienne copie locale du dépôt (non suivie) : ne pas la surveiller.
+    watch: { ignored: ['**/meltingPotes/**'] },
+  },
+  test: {
+    // Ne lancer que les tests du projet, pas ceux de la copie meltingPotes/.
+    exclude: ['**/node_modules/**', '**/dist/**', 'meltingPotes/**'],
+  },
 }

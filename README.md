@@ -47,3 +47,12 @@ Vite affiche l’URL locale, généralement <http://localhost:4173>.
 ```sh
 pnpm test
 ```
+
+## Serveur HomeboxServer
+
+Sur le serveur, le projet est géré par HomeboxServer (port 5184) :
+
+```sh
+make start MeltingPotes   # pnpm install + build + vite preview sur :5184
+make stop MeltingPotes    # libère le port 5184
+```
