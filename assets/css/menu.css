@@ -1,0 +1,94 @@
+/* ---------------- Menu Section ---------------- */
+.menus {
+  background-color: #1c1c1c;
+  color: #f4f4f4;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 2rem;
+  border: 4px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.menu-buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.menu-buttons label {
+  cursor: pointer;
+  background: #333;
+  color: #eee;
+  padding: 0.6rem 1.4rem;
+  margin: 0 0.4rem;
+  border-radius: 6px;
+  font-weight: bold;
+  user-select: none;
+  transition: background 0.5s ease;
+}
+
+.menu-buttons label:hover {
+  background: #555;
+}
+
+input[name="menu-select"] {
+  display: none;
+}
+
+.menu-section {
+  display: none;
+  background: #1c1c1c;
+  border: 2px solid #666;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+#menu1:checked ~ .menus .menu-1,
+#menu2:checked ~ .menus .menu-2,
+#menu3:checked ~ .menus .menu-3,
+#menu4:checked ~ .menus .menu-4 {
+  display: block;
+}
+
+.menu-category {
+  margin-bottom: 2rem;
+}
+
+.menu-category h5 {
+  color: #fff176;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-category li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.menu-category li span {
+  align-self: flex-end;
+  font-weight: bold;
+  color: #ffa726;
+}
+
+.menu-category li small {
+  margin-top: -30px;
+  font-style: italic;
+  color: #aaa;
+}
+
+.option {
+  font-size: 0.95em;
+  color: #444;
+}

@@ -1,0 +1,65 @@
+/* ---------------- Footer ---------------- */
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-block {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.horaire-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.ligne {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 4px 8px;
+  color: #eee;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.ligne span:first-child {
+  font-weight: 600;
+}
+
+.map-link {
+  all: unset;
+  background: none;
+  border: none;
+  color: #66aaff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.map-link:hover {
+  color: #003399;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #aaa;
+}
